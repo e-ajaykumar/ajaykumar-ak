@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macc Essentiles</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://kit.fontawesome.com/3a7d7667e0.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Return</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="#">Register/Sign In</a></li>
+        </ul>
+    </nav>
+    <div class="nav-line"></div>
+    <div class="menu">
+        <div class="icon1-srch">
+        <div class="container">
+        <div class="icon1">
+            <a href="#"><i class="search fa fa-search"></i></a>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Search" id="search">
+            <i class="clear fa fa-times"></i>
+        </div>
+        </div>
+        </div>
+        <div class="icon2"> 
+            <ul>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ESSENTIALS</a></li>
+                <li><a href="index.html"><h2>Macc<br> <span>Essentials</span></h2></a></li>
+                <li><a href="#">BEST SELLERS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+        </ul>
+        </div>
+        <div class="icon3">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-bell">
+                <span class="badge">.</span>
+            </i></a>
+            <a href="checkout.html"><i class="fa-solid fa-bag-shopping"></i></a>
+         </div>
+    </div>
+    <!------Sucessfull Cart----->
+    <div class="popup" id="popup">
+        <img src="img/tick.png">
+        <h2>Thank You!</h2>
+        <p>Payment Successfull</p>
+        <button type="button" onclick="closepopup()">Continu Shopping</button>
+       </div>
+    <!------Pyment area----->
+<div class="payment-area">
+    <div class="pay-details">
+        <h1 class="Payment-text">PAYMENT</h1>
+       <form>
+            <div class="radio-btn1">
+            <input name="rb" type="radio"  value="opt-1" >
+            <label  for="opt-1">Bitcoin</label></div>
+            <div class="radio-btn2">
+            <input name="rb" type="radio"  value="opt-2">
+            <label for="opt-2">Apple Wallet</label></div>
+            <div class="radio-btn3">
+            <input name="rb" type="radio"  value="opt-3">
+            <label for="opt-3">Paypal</label></div>
+            <div class="radio-btn4">
+            <input name="rb" type="radio"  value="opt-4">
+            <label for="opt-4">Debit/Credit Card</label></div>
+        </form>
+        <h3 class="delivery">Card Details</h3>
+        <form onsubmit="return validate()" action="Success.html" autocomplete="off">
+            <input class="card-no1" name="cardno" id="cardno" type="number"  placeholder="**** **** ****" required><br>
+            <input class="card-no2" name="cardname" id="cardname" type="text" placeholder="Name on Card" required><br>
+            <input class="card-no3" name="date" id="date" type="date" placeholder="Expiry Date" required>
+            <input class="card-no4" name="cvv" id="cvv" type="number"  placeholder="CVV" required><br>
+            <button class="back-btn" onclick="history.back()"><i class="fa-solid fa-circle-arrow-left"></i>Go back to Checkout</button>
+            <button class="pay-button" type="submit">Pay Now</button>
+        </form>
+    </div>
+    <div class="pay-img">
+        <img src="img/pay.jpg">
+    </div>
+</div>
+    <!------footer area----->
+    <div class="macc-footer">
+        <div class="footer-list1">
+        <h1>MACC <br> <span>ESSENTIALS</span></h1>
+    </div>
+    <div class="footer-list2">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="collections.html">COLLECTION</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+        </ul>
+    </div>
+    <div class="footer-list3">
+        <ul>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="footer-list4">
+        <p>Be the first to know about our biggest and best <br>
+            sales. We'll never send more than one email a <br>
+            month.</p><br><br>
+            <form>
+                <input type="text" name="search" placeholder="Enter Your Email">
+            </form><br>
+            <ul>
+                <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"style="font-size:25px;"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"style="font-size:25px;"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"style="font-size:25px;"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"style="font-size:25px;"></i></a></li>
+            </ul>
+    </div>
+</div>
+<div class="fot">
+    <p>All Rights are resirved</p><br>
+</div>
+<script>
+    function validate()
+    var cardno = document.getElementById("cardno");
+    var cardname = document.getElementById("cardname");
+    var date = document.getElementById("date");
+    var cvv = document.getElementById("cvv");
+    
+    if(cardno.value.trim() =="" || cardname.value.trim() =="" ||
+   date.value.trim() =="" || cvv.value.trim() =="")
+   {
+    alert("Fill all the Fields")
+    return false;
+   } 
+   else 
+   {
+    true;
+   }
+</script>
+</body>
+</html>

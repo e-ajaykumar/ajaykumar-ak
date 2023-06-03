@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://kit.fontawesome.com/3a7d7667e0.js"></script>
+    <title>Add To Cart</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Return</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="#">Register/Sign In</a></li>
+        </ul>
+    </nav>
+    <div class="nav-line"></div>
+    <div class="menu">
+        <div class="icon1-srch">
+        <div class="container">
+        <div class="icon1">
+            <a href="#"><i class="search fa fa-search"></i></a>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Search" id="search">
+            <i class="clear fa fa-times"></i>
+        </div>
+        </div>
+        </div>
+        <div class="icon2"> 
+            <ul>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ESSENTIALS</a></li>
+                <li><a href="index.html"><h2>Macc<br> <span>Essentials</span></h2></a></li>
+                <li><a href="#">BEST SELLERS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+        </ul>
+        </div>
+        <div class="icon3">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-bell">
+                <span class="badge">.</span>
+            </i></a>
+            <a href="checkout.html"><i class="fa-solid fa-bag-shopping"></i></a>
+         </div>
+    </div>
+     <!------Sucessfull Cart----->
+     <div class="popup" id="popup">
+      <img src="img/tick.png">
+      <h2>Thank You!</h2>
+      <p>Item Added To Cart</p>
+      <button type="button" onclick="closepopup()">OK</button>
+     </div>
+    <!------Content----->
+    <h4 class="content-menu">Home / Products / Product</h4>
+    <div class="cart-section">
+        <div class="row1">
+            <ul>
+                <li><img src="img/stayfree.jpg"></li>
+                <li><img src="img/stayfree.jpg"></li>
+                <li><img src="img/stayfree.jpg"></li>
+                <li><img src="img/stayfree.jpg"></li>
+            </ul>
+        </div>
+        <div class="row2">
+            <img src="img/stayfree.jpg">
+        </div>
+        <div class="row3">
+            <h3 class="item-name">STAY FREE PADS<span><i class="fa-regular fa-heart"></i></span></h3>
+            <h3 class="item-name">$ 25.00</h3>
+            <button class="r3-btn">SMALL</button>
+            <button class="r3-btn">MEDIUM</button>
+            <button class="r3-btn">LARGE</button><br>
+            <button class="r3-add-btn" type="submit" onclick="openpopup()">ADD TO CART</button>
+            <p>Aliquam faucibus, odio nec commodo aliquam, 
+                neque felis placerat <br> dui, 
+                a porta ante lectus dapibus est. 
+                Aliquam a bibendum mi, <br> condimentum est.
+                 Mauris arcu odio, vestibulum quis dapibus sit amet, </p>
+                 <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">DESCRIPTION</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">AAA</a>
+                      <a href="#">BBB</a>
+                      <a href="#">CCC</a>
+                    </div>
+                  </div><br>
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">RETURN POLICY</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">DDD</a>
+                      <a href="#">EEE</a>
+                      <a href="#">FFF</a>
+                    </div>
+                  </div><br>
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">CITIZEN POLICY</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">GGG</a>
+                      <a href="#">HHH</a>
+                      <a href="#">III</a>
+                    </div>
+                  </div>
+    </div>
+    </div>
+    <!------Swiper-1----->
+    <div class="swiper-body">
+      <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="cart gel.html"><img src="img/gel.jpg"></a></div>
+            <div class="swiper-slide"><a href="cart mask.html"><img src="img/mask.jpg"></a></div>
+            <div class="swiper-slide"><a href="cart nevya.html"><img src="img/nevya.jpg"></a></div>
+            <div class="swiper-slide"><a href="cart gel.html"><img src="img/gel.jpg"></a></div>
+            <div class="swiper-slide"><a href="cart mask.html"><img src="img/mask.jpg"></a></div>
+            <div class="swiper-slide"><a href="cart nevya.html"><img src="img/nevya.jpg"></a></div>
+            <div class="swiper-slide"><a href="cart gel.html"><img src="img/gel.jpg"></a></div>
+            <div class="swiper-slide"><a href="cart mask.html"><img src="img/mask.jpg"></a></div>
+            <div class="swiper-slide"><a href="cart nevya.html"><img src="img/nevya.jpg"></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>  
+     <!------footer area----->
+     <div class="macc-footer">
+        <div class="footer-list1">
+        <h1>MACC <br> <span>ESSENTIALS</span></h1>
+    </div>
+    <div class="footer-list2">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="collections.html">COLLECTION</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+        </ul>
+    </div>
+    <div class="footer-list3">
+        <ul>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="footer-list4">
+        <p>Be the first to know about our biggest and best <br>
+            sales. We'll never send more than one email a <br>
+            month.</p><br><br>
+            <form>
+                <input type="text" name="search" placeholder="Enter Your Email">
+            </form><br>
+            <ul>
+                <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"style="font-size:25px;"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"style="font-size:25px;"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"style="font-size:25px;"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"style="font-size:25px;"></i></a></li>
+            </ul>
+    </div>
+</div>
+<div class="fot">
+    <p>All Rights are resirved</p><br>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      let popup = document.getElementById("popup");
+
+function openpopup(){
+  popup.classList.add("open-popup");
+}
+function closepopup(){
+  popup.classList.remove("open-popup");
+}
+        let search = document.querySelector(".search");
+        let clear = document.querySelector(".clear");
+        
+        search.onclick = function(){
+        document.querySelector(".container").classList.toggle('active');
+}
+        clear.onclick = function(){
+        document.getElementById("search").value = "";
+}
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+ </script>
+</body>
+</html>
